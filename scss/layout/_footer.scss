@@ -1,0 +1,21 @@
+&__attribution {
+  width: 100%;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0rem 0 1rem 0;
+
+  &-link:link,
+  &-link:visited {
+    text-transform: uppercase;
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  &-link:hover,
+  &-link:active {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
