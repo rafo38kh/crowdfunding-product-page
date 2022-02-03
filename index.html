@@ -23,6 +23,258 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
+    <section class="crowdfund">
+      <header class="crowdfund__header">
+        <div class="crowdfund__header-wrapper">
+          <img src="images/logo.svg" alt="crowdfund" class="crowdfund__logo" />
+
+          <button class="crowdfund__button crowdfund__button--menu">
+            <img
+              src="images/icon-hamburger.svg"
+              alt=""
+              class="crowdfund__burger"
+            />
+          </button>
+        </div>
+
+        <nav class="crowdfund__navigation">
+          <ul class="crowdfund__list">
+            <li class="crowdfund__item">
+              <a href="" class="crowdfund__link"></a>
+            </li>
+
+            <li class="crowdfund__item">
+              <a href="" class="crowdfund__link"></a>
+            </li>
+
+            <li class="crowdfund__item">
+              <a href="" class="crowdfund__link"></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <main class="crowdfund__main">
+      <section class="mastercraft__section">
+        <img
+          src="images/logo-mastercraft.svg"
+          alt="mastercraft"
+          class="mastercraft__logo"
+        />
+        <h1 class="mastercraft__title mastercraft__title--primary"></h1>
+        <p class="mastercraft__subtitle"></p>
+        <div class="mastercraft__bookmark-wrapper">
+          <button class="crowdfund__button crowdfund__button--back"></button>
+          <button class="crowdfund__button crowdfund__button--bookmark">
+            <img
+              src="./images/icon-bookmark.svg"
+              alt="bookmark"
+              class="mastercraft__bookmark"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="mastercraft__section">
+        <div class="mastercraft__number-wrapper">
+          <p class="mastercraft__num">
+            <span class="mastercraft__num-span"></span>
+          </p>
+          <p class="mastercraft__num">
+            <span class="mastercraft__num-span"></span>
+          </p>
+          <p class="mastercraft__num">
+            <span class="mastercraft__num-span"></span>
+          </p>
+        </div>
+
+        <div class="mastercraft__progress">
+          <div class="mastercraft__progress--bar"></div>
+        </div>
+      </section>
+
+      <section class="mastercraft__section">
+        <h2 class="mastercraft__title mastercraft__title--secondary"></h2>
+        <p class="mastercraft__paragraph"></p>
+        <p class="mastercraft__paragraph"></p>
+
+        <div class="mastercraft__section mastercraft__section--mini">
+          <div class="mastercraft__header-wrapper">
+            <h3 class="mastercraft__title mastercraft__title--secondary"></h3>
+            <p
+              class="mastercraft__subtitle mastercraft__subtitle--secondary"
+            ></p>
+          </div>
+          <p class="mastercraft__paragraph"></p>
+          <div class="mastercraft__button-wrapper">
+            <p class="mastercraft__num mastercraft__num--mini">
+              <span
+                class="mastercraft__num-span mastercraft__num-span--mini"
+              ></span>
+            </p>
+
+            <button class="crowdfund__button crowdfund__button--mini"></button>
+          </div>
+        </div>
+
+        <div class="mastercraft__section mastercraft__section--mini">
+          <div class="mastercraft__header-wrapper">
+            <h3 class="mastercraft__title mastercraft__title--secondary"></h3>
+            <p
+              class="mastercraft__subtitle mastercraft__subtitle--secondary"
+            ></p>
+          </div>
+          <p class="mastercraft__paragraph"></p>
+          <div class="mastercraft__button-wrapper">
+            <p class="mastercraft__num mastercraft__num--mini">
+              <span
+                class="mastercraft__num-span mastercraft__num-span--mini"
+              ></span>
+            </p>
+
+            <button class="crowdfund__button crowdfund__button--mini"></button>
+          </div>
+        </div>
+
+        <div
+          class="mastercraft__section mastercraft__section--mini mastercraft__section-disabled"
+        >
+          <div class="mastercraft__header-wrapper">
+            <h3
+              class="mastercraft__title mastercraft__title--secondary mastercraft__title-disabled"
+            ></h3>
+            <p
+              class="mastercraft__subtitle mastercraft__subtitle--secondary mastercraft__subtitle-disabled"
+            ></p>
+          </div>
+          <p class="mastercraft__paragraph mastercraft__paragraph-disabled"></p>
+          <div class="mastercraft__button-wrapper">
+            <p
+              class="mastercraft__num mastercraft__num--mini mastercraft__num-disabled"
+            >
+              <span
+                class="mastercraft__num-span mastercraft__num-span--mini mastercraft__num-span-disabled"
+              ></span>
+            </p>
+
+            <button
+              class="crowdfund__button crowdfund__button--mini crowdfund__button-disabled"
+            ></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="crowdfund__footer"></footer>
+
+    <div class="modals__wrapper">
+      <div class="modal__big">
+        <div class="modal__header">
+          <h4 class="modal__title modal__title--primary"></h4>
+
+          <button class="crowdfund__button crowdfund__button-modal--close">
+            <img
+              src="./images/icon-close-modal.svg"
+              alt=""
+              class="modal-close"
+              aria-hidden="true"
+            />
+          </button>
+        </div>
+        <p class="modal__paragraph modal__paragraph--primary"></p>
+
+        <div class="modal__box">
+          <div class="modal__check-wrapper">
+            <input type="radio" class="modal__radio js-radio" />
+            <h5 class="modal__title modal__title--secondary"></h5>
+          </div>
+          <p class="modal__paragraph modal__paragraph--secondary"></p>
+        </div>
+
+        <div class="modal__box">
+          <div class="modal__box-divider">
+            <div class="modal__check-wrapper">
+              <input type="radio" class="modal__radio js-radio" />
+              <div class="modal__header-wrapper">
+                <h5 class="modal__title modal__title--secondary"></h5>
+                <h6 class="modal__subtitle"></h6>
+              </div>
+            </div>
+            <p class="modal__paragraph modal__paragraph--secondary"></p>
+            <p class="modal__number">
+              <span class="modal__number--span"></span>
+            </p>
+          </div>
+
+          <div class="modal__pledge-wrapper">
+            <p class="modal__pledge"></p>
+            <form action="#" class="modal__form">
+              <input type="text" class="modal__input js-input" />
+              <button
+                class="crowdfund__button crowdfund__button-modal--submit"
+              ></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal__box">
+          <div class="modal__box-divider">
+            <div class="modal__check-wrapper">
+              <input type="radio" class="modal__radio js-radio" />
+              <div class="modal__header-wrapper">
+                <h5 class="modal__title modal__title--secondary"></h5>
+                <h6 class="modal__subtitle"></h6>
+              </div>
+            </div>
+            <p class="modal__paragraph modal__paragraph--secondary"></p>
+            <p class="modal__number">
+              <span class="modal__number--span"></span>
+            </p>
+          </div>
+
+          <div class="modal__pledge-wrapper">
+            <p class="modal__pledge"></p>
+            <form action="#" class="modal__form">
+              <input type="text" class="modal__input js-input" />
+              <button
+                class="crowdfund__button crowdfund__button-modal--submit"
+              ></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal__box">
+          <div class="modal__box-divider">
+            <div class="modal__check-wrapper">
+              <input type="radio" class="modal__radio js-radio" disabled />
+              <div class="modal__header-wrapper">
+                <h5
+                  class="modal__title modal__title--secondary modal__title-disabled"
+                ></h5>
+                <h6 class="modal__subtitle modal__subtitle-disabled"></h6>
+              </div>
+            </div>
+            <p
+              class="modal__paragraph modal__paragraph--secondary modal__paragraph-disabled"
+            ></p>
+            <p class="modal__number modal__number-disabled">
+              <span class="modal__number--span"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal__small">
+        <img src="images/icon-check.svg" alt="check" class="modal__check" />
+        <h6 class="modal__title-small"></h6>
+        <p class="modal__paragraph-small"></p>
+        <button
+          class="crowdfund__button crowdfund__button-modal--small"
+        ></button>
+      </div>
+    </div>
+
     <!-- About
   Discover
   Get Started
