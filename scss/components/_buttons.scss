@@ -1,0 +1,43 @@
+@use "../abstracts/index" as *;
+
+.crowdfund {
+  &__button {
+    &--menu {
+      background: transparent;
+      border: 0.1rem solid transparent;
+    }
+
+    &--back {
+      background-color: hsl(176, 72%, 28%);
+      color: $color-white;
+      font-size: 1.6rem;
+      width: 22rem;
+      padding: 1.25rem;
+      border: 0.1rem solid hsl(176, 72%, 28%);
+      border-radius: 3rem;
+    }
+
+    &--bookmark {
+      background: transparent;
+      border: 1px solid transparent;
+      display: flex;
+      overflow: hidden;
+      width: 5rem;
+    }
+
+    &--mini {
+    }
+
+    &-disabled {
+    }
+
+    &-modal--close {
+    }
+
+    &-modal--submit {
+    }
+
+    &-modal--small {
+    }
+  }
+}

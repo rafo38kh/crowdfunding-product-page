@@ -1,3 +1,5 @@
+@use "../abstracts/index" as *;
+
 *,
 *::before,
 *::after {
@@ -11,6 +13,12 @@ li {
   list-style: none;
 }
 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -18,5 +26,6 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: $color-white;
   font-family: "Commissioner", sans-serif; //  Weights: 400, 500, 700
 }
