@@ -2,22 +2,25 @@
 
 .crowdfund {
   &__button {
+    background-color: hsl(176, 72%, 28%);
+    color: $color-white;
+    font-size: 1.6rem;
+    width: 22rem;
+    padding: 1.25rem;
+    border: 0.1rem solid hsl(176, 72%, 28%);
+    border-radius: 3rem;
+
     &--menu {
+      all: unset;
       background: transparent;
       border: 0.1rem solid transparent;
     }
 
     &--back {
-      background-color: hsl(176, 72%, 28%);
-      color: $color-white;
-      font-size: 1.6rem;
-      width: 22rem;
-      padding: 1.25rem;
-      border: 0.1rem solid hsl(176, 72%, 28%);
-      border-radius: 3rem;
     }
 
     &--bookmark {
+      all: unset;
       background: transparent;
       border: 1px solid transparent;
       display: flex;
@@ -26,9 +29,19 @@
     }
 
     &--mini {
+      width: 16rem;
+      font-size: 1.4rem;
+      padding: 1.5rem;
     }
 
     &-disabled {
+      background-color: $color-darkGray;
+      border: 0.1rem solid $color-darkGray;
+      opacity: 0.6;
+
+      &:hover {
+        cursor: not-allowed;
+      }
     }
 
     &-modal--close {

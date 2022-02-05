@@ -28,11 +28,7 @@ body {
   font-family: "Commissioner", sans-serif;
 }
 
-.crowdfund__button--menu {
-  background: transparent;
-  border: 0.1rem solid transparent;
-}
-.crowdfund__button--back {
+.crowdfund__button {
   background-color: #147b74;
   color: white;
   font-size: 1.6rem;
@@ -41,12 +37,31 @@ body {
   border: 0.1rem solid #147b74;
   border-radius: 3rem;
 }
+.crowdfund__button--menu {
+  all: unset;
+  background: transparent;
+  border: 0.1rem solid transparent;
+}
 .crowdfund__button--bookmark {
+  all: unset;
   background: transparent;
   border: 1px solid transparent;
   display: flex;
   overflow: hidden;
   width: 5rem;
+}
+.crowdfund__button--mini {
+  width: 16rem;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+}
+.crowdfund__button-disabled {
+  background-color: #7a7a7a;
+  border: 0.1rem solid #7a7a7a;
+  opacity: 0.6;
+}
+.crowdfund__button-disabled:hover {
+  cursor: not-allowed;
 }
 .crowdfund {
   background-image: url(../../images/image-hero-mobile.jpg);
@@ -98,7 +113,7 @@ body {
   width: 100%;
   max-width: 60rem;
   margin: 0 auto 2rem auto;
-  padding: 3rem 2rem;
+  padding: 3rem 2.7rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   box-shadow: 0px 4px 8px 1px rgba(125, 125, 126, 0.2);
@@ -120,6 +135,18 @@ body {
   width: 90%;
   margin: 1.5rem auto;
 }
+.mastercraft__title--secondary {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.mastercraft__title--mini {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.mastercraft__title-disabled {
+  color: #7a7a7a;
+  opacity: 0.6;
+}
 .mastercraft__subtitle {
   font-size: 1.4rem;
   line-height: 1.5;
@@ -128,6 +155,12 @@ body {
 .mastercraft__subtitle--primary {
   color: #7a7a7a;
   text-align: center;
+}
+.mastercraft__subtitle--mini {
+  color: #3cb4ac;
+}
+.mastercraft__subtitle-disabled {
+  opacity: 0.6;
 }
 .mastercraft__bookmark-wrapper {
   display: flex;
@@ -157,20 +190,51 @@ body {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+.mastercraft__num-span--mini {
+  margin-bottom: 0;
+}
+.mastercraft__num--mini {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
 .mastercraft__num--mini:not(:last-child)::after {
   all: unset;
 }
+.mastercraft__num-disabled {
+  opacity: 0.6;
+}
 .mastercraft__progress {
+  position: relative;
   background-color: rgba(122, 122, 122, 0.1);
   width: 100%;
   height: 1rem;
   border-radius: 1rem;
 }
-.mastercraft__progress--bar {
+.mastercraft__progress::before {
+  content: "";
+  position: absolute;
   background-color: #147b74;
   width: 80%;
-  height: 1rem;
+  height: 100%;
   border-radius: 1rem;
+}
+.mastercraft__paragraph {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+.mastercraft__paragraph-disabled {
+  opacity: 0.6;
+}
+.modal__big {
+  display: none;
+}
+.modal__small {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
