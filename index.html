@@ -222,8 +222,8 @@
 
     <footer class="footer"></footer>
 
-    <div class="modals__wrapper">
-      <div class="modal__big">
+    <div class="modal__wrapper">
+      <div class="modal__section modal__big">
         <div class="modal__header">
           <h4 class="modal__title modal__title--primary">Back this project</h4>
 
@@ -241,7 +241,7 @@
           the world?
         </p>
 
-        <div class="modal__box">
+        <div class="modal__section modal__box">
           <div class="modal__check-wrapper">
             <input type="radio" class="modal__radio js-radio" />
             <h5 class="modal__title modal__title--secondary">
@@ -255,7 +255,7 @@
           </p>
         </div>
 
-        <div class="modal__box">
+        <div class="modal__section modal__box">
           <div class="modal__box-divider">
             <div class="modal__check-wrapper">
               <input type="radio" class="modal__radio js-radio" />
@@ -291,7 +291,7 @@
           </div>
         </div>
 
-        <div class="modal__box">
+        <div class="modal__section modal__box">
           <div class="modal__box-divider">
             <div class="modal__check-wrapper">
               <input type="radio" class="modal__radio js-radio" />
@@ -327,10 +327,14 @@
           </div>
         </div>
 
-        <div class="modal__box">
+        <div class="modal__section modal__box modal__box-disabled">
           <div class="modal__box-divider">
             <div class="modal__check-wrapper">
-              <input type="radio" class="modal__radio js-radio" disabled />
+              <input
+                type="radio"
+                class="modal__radio modal__radio--disabled js-radio"
+                disabled
+              />
               <div class="modal__header-wrapper">
                 <h5
                   class="modal__title modal__title--secondary modal__title-disabled"
@@ -359,10 +363,10 @@
         </div>
       </div>
 
-      <div class="modal__small">
+      <div class="modal__section modal__small">
         <img src="images/icon-check.svg" alt="check" class="modal__check" />
-        <h6 class="modal__title-small">Thanks for your support!</h6>
-        <p class="modal__paragraph-small">
+        <h6 class="modal__title--small">Thanks for your support!</h6>
+        <p class="modal__paragraph--small">
           Your pledge brings us one step closer to sharing Mastercraft Bamboo
           Monitor Riser worldwide. You will get an email once our campaign is
           completed.

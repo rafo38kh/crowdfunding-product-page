@@ -26,15 +26,16 @@ body {
   font-size: 1.6rem;
   background-color: white;
   font-family: "Commissioner", sans-serif;
+  position: relative;
 }
 
 .crowdfund__button {
-  background-color: #147b74;
+  background-color: #3cb4ac;
   color: white;
   font-size: 1.6rem;
   width: 22rem;
   padding: 1.25rem;
-  border: 0.1rem solid #147b74;
+  border: 0.1rem solid #3cb4ac;
   border-radius: 3rem;
 }
 .crowdfund__button--menu {
@@ -63,6 +64,18 @@ body {
 .crowdfund__button-disabled:hover {
   cursor: not-allowed;
 }
+.crowdfund__button-modal--close {
+  all: unset;
+  background: transparent;
+  border: 0.1rem solid transparent;
+}
+.crowdfund__button-modal--submit {
+  width: 11rem;
+}
+.crowdfund__button-modal--small {
+  width: 9rem;
+}
+
 .crowdfund {
   background-image: url(../../images/image-hero-mobile.jpg);
   background-repeat: no-repeat;
@@ -230,11 +243,144 @@ body {
 .mastercraft__paragraph-disabled {
   opacity: 0.6;
 }
+.modal__wrapper {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12rem 2rem;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modal__section {
+  font-weight: 500;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto 2rem auto;
+  padding: 3rem 2.7rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px 1px rgba(125, 125, 126, 0.2);
+}
 .modal__big {
   display: none;
+  background-color: white;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.modal__title {
+  font-size: 1.8rem;
+}
+.modal__title--secondary {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.modal__title-disabled {
+  opacity: 0.6;
+}
+.modal__title--small {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+.modal__subtitle {
+  color: #147b74;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.modal__subtitle-disabled {
+  opacity: 0.6;
+}
+.modal__paragraph {
+  color: #7a7a7a;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.modal__paragraph--secondary {
+  font-weight: 400;
+}
+.modal__paragraph-disabled {
+  opacity: 0.6;
+}
+.modal__paragraph--small {
+  color: #7a7a7a;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+.modal__box {
+  box-shadow: unset;
+}
+.modal__check-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.modal__radio {
+  appearance: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+}
+.modal__radio--disabled {
+  border: 1px solid #c3c3c3;
+  cursor: not-allowed;
+}
+.modal__radio:checked {
+  background-color: #3cb4ac;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+.modal__number {
+  color: #7a7a7a;
+  font-weight: 400;
+}
+.modal__number--span {
+  color: black;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+.modal__number-disabled {
+  opacity: 0.6;
+}
+.modal__pledge-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.modal__pledge {
+  color: #7a7a7a;
+  font-size: 1.4rem;
+  margin: 3rem 0 2rem;
+}
+.modal__form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.modal__input {
+  width: 10rem;
+  padding: 1.25rem;
+  border: 0.1rem solid silver;
+  border-radius: 3rem;
+  font-weight: 700;
 }
 .modal__small {
-  display: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
