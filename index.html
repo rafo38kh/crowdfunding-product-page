@@ -28,7 +28,7 @@
         <div class="crowdfund__header-wrapper">
           <img src="images/logo.svg" alt="crowdfund" class="crowdfund__logo" />
 
-          <button class="crowdfund__button crowdfund__button--menu">
+          <button class="crowdfund__button crowdfund__button--menu js-burger">
             <img
               src="images/icon-hamburger.svg"
               alt=""
@@ -37,7 +37,7 @@
           </button>
         </div>
 
-        <nav class="crowdfund__navigation">
+        <nav class="crowdfund__navigation js-nav">
           <ul class="crowdfund__list">
             <li class="crowdfund__item">
               <a href="" class="crowdfund__link">About </a>
@@ -69,15 +69,18 @@
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
         <div class="mastercraft__bookmark-wrapper">
-          <button class="crowdfund__button crowdfund__button--back">
+          <button class="crowdfund__button crowdfund__button--back js-back">
             Back this project
           </button>
-          <button class="crowdfund__button crowdfund__button--bookmark">
+          <button
+            class="crowdfund__button crowdfund__button--bookmark js-bookmark"
+          >
             <img
               src="./images/icon-bookmark.svg"
               alt="bookmark"
               class="mastercraft__bookmark"
-            />Bookmark
+            />
+            <span> Bookmark </span>
           </button>
         </div>
       </section>
@@ -142,7 +145,7 @@
               left
             </p>
 
-            <button class="crowdfund__button crowdfund__button--mini">
+            <button class="crowdfund__button crowdfund__button--mini js-select">
               Select Reward
             </button>
           </div>
@@ -174,7 +177,7 @@
               left
             </p>
 
-            <button class="crowdfund__button crowdfund__button--mini">
+            <button class="crowdfund__button crowdfund__button--mini js-select">
               Select Reward
             </button>
           </div>
@@ -227,7 +230,9 @@
         <div class="modal__header">
           <h4 class="modal__title modal__title--primary">Back this project</h4>
 
-          <button class="crowdfund__button crowdfund__button-modal--close">
+          <button
+            class="crowdfund__button crowdfund__button-modal--close js-modal-close"
+          >
             <img
               src="./images/icon-close-modal.svg"
               alt=""
@@ -241,14 +246,16 @@
           the world?
         </p>
 
-        <div class="modal__section modal__box">
+        <div class="modal__section modal__box--first">
           <div class="modal__check-wrapper">
             <input type="radio" class="modal__radio js-radio" />
             <h5 class="modal__title modal__title--secondary">
               Pledge with no reward
             </h5>
           </div>
-          <p class="modal__paragraph modal__paragraph--secondary">
+          <p
+            class="modal__paragraph modal__paragraph--secondary modal__paragraph--first"
+          >
             Choose to support us without a reward if you simply believe in our
             project. As a backer, you will be signed up to receive product
             updates via email.
@@ -284,7 +291,9 @@
                 type="text"
                 class="modal__input js-input"
               />
-              <button class="crowdfund__button crowdfund__button-modal--submit">
+              <button
+                class="crowdfund__button crowdfund__button-modal--submit js-continue"
+              >
                 Continue
               </button>
             </form>
@@ -320,7 +329,9 @@
                 type="text"
                 class="modal__input js-input"
               />
-              <button class="crowdfund__button crowdfund__button-modal--submit">
+              <button
+                class="crowdfund__button crowdfund__button-modal--submit js-continue"
+              >
                 Continue
               </button>
             </form>

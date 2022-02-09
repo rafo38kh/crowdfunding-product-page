@@ -10,10 +10,25 @@
     border: 0.1rem solid $color-moderatecyan;
     border-radius: 3rem;
 
+    &:hover {
+      cursor: pointer;
+      background-color: $color-darkcyan;
+      border: 0.1rem solid $color-darkcyan;
+    }
+
     &--menu {
       all: unset;
       background: transparent;
       border: 0.1rem solid transparent;
+
+      &:hover {
+        background: transparent;
+        border: 0.1rem solid transparent;
+      }
+
+      @media (min-width: 1140px) {
+        display: none;
+      }
     }
 
     &--back {
@@ -26,6 +41,28 @@
       display: flex;
       overflow: hidden;
       width: 5rem;
+
+      &.bookmarked {
+        filter: invert(39%) sepia(32%) saturate(883%) hue-rotate(129deg)
+          brightness(94%) contrast(98%);
+      }
+
+      @media (min-width: 768px) {
+        background: rgba($color-darkGray, 0.1);
+        color: $color-darkGray;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 3rem;
+        width: 18rem;
+      }
+
+      &:hover {
+        background-color: rgba($color-darkGray, 0.1);
+        border: 0.1rem solid transparent;
+        .mastercraft__bookmark {
+          opacity: 0.6;
+        }
+      }
     }
 
     &--mini {
@@ -41,6 +78,8 @@
 
       &:hover {
         cursor: not-allowed;
+        background-color: $color-darkGray;
+        border: 0.1rem solid $color-darkGray;
       }
     }
 
@@ -48,6 +87,11 @@
       all: unset;
       background: transparent;
       border: 0.1rem solid transparent;
+
+      &:hover {
+        background: transparent;
+        border: 0.1rem solid transparent;
+      }
     }
 
     &-modal--submit {
