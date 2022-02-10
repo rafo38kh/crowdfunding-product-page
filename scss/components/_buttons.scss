@@ -32,6 +32,10 @@
     }
 
     &--back {
+      @media (min-width: 1140px) {
+        width: 20rem;
+        padding: 1.7rem;
+      }
     }
 
     &--bookmark {

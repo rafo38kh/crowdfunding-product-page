@@ -99,7 +99,9 @@
           </p>
         </div>
 
-        <div class="mastercraft__progress"></div>
+        <div class="mastercraft__progress">
+          <div class="mastercraft__progress--bar"></div>
+        </div>
       </section>
 
       <section class="mastercraft__section">
@@ -246,12 +248,20 @@
           the world?
         </p>
 
-        <div class="modal__section modal__box--first">
-          <div class="modal__check-wrapper">
-            <input type="radio" class="modal__radio js-radio" />
-            <h5 class="modal__title modal__title--secondary">
-              Pledge with no reward
-            </h5>
+        <div class="modal__section modal__box modal__box--first border">
+          <div class="modal__first-box">
+            <div class="modal__check-wrapper">
+              <input
+                type="radio"
+                class="modal__radio js-radio"
+                id="pledge"
+                name="drone"
+                value="pledge"
+              />
+              <label for="pledge" class="modal__title modal__title--secondary">
+                Pledge with no reward
+              </label>
+            </div>
           </div>
           <p
             class="modal__paragraph modal__paragraph--secondary modal__paragraph--first"
@@ -262,15 +272,24 @@
           </p>
         </div>
 
-        <div class="modal__section modal__box">
+        <div class="modal__section modal__box border">
           <div class="modal__box-divider">
             <div class="modal__check-wrapper">
-              <input type="radio" class="modal__radio js-radio" />
+              <input
+                type="radio"
+                class="modal__radio js-radio"
+                id="bamboo"
+                name="drone"
+                value="bamboo"
+              />
               <div class="modal__header-wrapper">
-                <h5 class="modal__title modal__title--secondary">
+                <label
+                  for="bamboo"
+                  class="modal__title modal__title--secondary"
+                >
                   Bamboo Stand
-                </h5>
-                <h6 class="modal__subtitle">Pledge $25 or more</h6>
+                </label>
+                <span class="modal__subtitle">Pledge $25 or more</span>
               </div>
             </div>
             <p class="modal__paragraph modal__paragraph--secondary">
@@ -283,7 +302,7 @@
             </p>
           </div>
 
-          <div class="modal__pledge-wrapper">
+          <div class="modal__pledge-wrapper js-pledge">
             <p class="modal__pledge">Enter your pledge</p>
             <form action="#" class="modal__form">
               <input
@@ -300,15 +319,21 @@
           </div>
         </div>
 
-        <div class="modal__section modal__box">
+        <div class="modal__section modal__box border">
           <div class="modal__box-divider">
             <div class="modal__check-wrapper">
-              <input type="radio" class="modal__radio js-radio" />
+              <input
+                type="radio"
+                class="modal__radio js-radio"
+                id="black"
+                name="drone"
+                value="dewey"
+              />
               <div class="modal__header-wrapper">
-                <h5 class="modal__title modal__title--secondary">
+                <label for="black" class="modal__title modal__title--secondary">
                   Black Edition Stand
-                </h5>
-                <h6 class="modal__subtitle">Pledge $75 or more</h6>
+                </label>
+                <span class="modal__subtitle">Pledge $75 or more</span>
               </div>
             </div>
             <p class="modal__paragraph modal__paragraph--secondary">
@@ -321,7 +346,7 @@
             </p>
           </div>
 
-          <div class="modal__pledge-wrapper">
+          <div class="modal__pledge-wrapper js-pledge">
             <p class="modal__pledge">Enter your pledge</p>
             <form action="#" class="modal__form">
               <input
@@ -352,9 +377,9 @@
                 >
                   Mahogany Special Edition
                 </h5>
-                <h6 class="modal__subtitle modal__subtitle-disabled">
+                <span class="modal__subtitle modal__subtitle-disabled">
                   Pledge $200 or more
-                </h6>
+                </span>
               </div>
             </div>
             <p
