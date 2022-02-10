@@ -2,7 +2,7 @@
 
 .modal {
   &__wrapper {
-    position: absolute;
+    position: fixed;
     background-color: rgba($color-black, 0.6);
     padding: 12rem 2rem;
     top: 0;
@@ -36,7 +36,15 @@
   }
 
   &__big {
+    // position: fixed;
     background-color: $color-white;
+    visibility: hidden;
+    opacity: 0;
+
+    &.modal__active {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   &__header-wrapper {
@@ -263,6 +271,10 @@
     @media (min-width: 810px) {
       margin: 0;
     }
+
+    &.text__error {
+      color: $color-error;
+    }
   }
 
   &__form {
@@ -294,14 +306,24 @@
 
   &__small {
     background-color: $color-white;
+    position: absolute;
+    max-width: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 4rem 2.7rem;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
     visibility: hidden;
     opacity: 0;
+
+    &.modal__active {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   &__check {

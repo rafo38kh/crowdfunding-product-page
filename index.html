@@ -88,11 +88,12 @@
       <section class="mastercraft__section">
         <div class="mastercraft__number-wrapper">
           <p class="mastercraft__num">
-            <span class="mastercraft__num-span">$89,914 </span> of $100,000
-            backed
+            <span class="mastercraft__num-span js-amount">$89,914 </span> of
+            $100,000 backed
           </p>
           <p class="mastercraft__num">
-            <span class="mastercraft__num-span">5,007</span> total backers
+            <span class="mastercraft__num-span js-backers">5,007</span> total
+            backers
           </p>
           <p class="mastercraft__num">
             <span class="mastercraft__num-span">56</span> days left
@@ -100,7 +101,7 @@
         </div>
 
         <div class="mastercraft__progress">
-          <div class="mastercraft__progress--bar"></div>
+          <div class="mastercraft__progress--bar js-progress"></div>
         </div>
       </section>
 
@@ -227,8 +228,8 @@
 
     <footer class="footer"></footer>
 
-    <div class="modal__wrapper">
-      <div class="modal__section modal__big">
+    <div class="modal__wrapper js-modal">
+      <div class="modal__section modal__big js-big">
         <div class="modal__header">
           <h4 class="modal__title modal__title--primary">Back this project</h4>
 
@@ -303,12 +304,13 @@
           </div>
 
           <div class="modal__pledge-wrapper js-pledge">
-            <p class="modal__pledge">Enter your pledge</p>
+            <p class="modal__pledge js-pledge-text">Enter your pledge</p>
             <form action="#" class="modal__form">
               <input
                 placeholder="$25"
                 type="text"
                 class="modal__input js-input"
+                id="amount-25"
               />
               <button
                 class="crowdfund__button crowdfund__button-modal--submit js-continue"
@@ -347,12 +349,13 @@
           </div>
 
           <div class="modal__pledge-wrapper js-pledge">
-            <p class="modal__pledge">Enter your pledge</p>
+            <p class="modal__pledge js-pledge-text">Enter your pledge</p>
             <form action="#" class="modal__form">
               <input
                 placeholder="$75"
                 type="text"
                 class="modal__input js-input"
+                id="amount-75"
               />
               <button
                 class="crowdfund__button crowdfund__button-modal--submit js-continue"
@@ -399,7 +402,7 @@
         </div>
       </div>
 
-      <div class="modal__section modal__small">
+      <div class="modal__section modal__small js-small">
         <img src="images/icon-check.svg" alt="check" class="modal__check" />
         <h6 class="modal__title--small">Thanks for your support!</h6>
         <p class="modal__paragraph--small">
@@ -407,7 +410,9 @@
           Monitor Riser worldwide. You will get an email once our campaign is
           completed.
         </p>
-        <button class="crowdfund__button crowdfund__button-modal--small">
+        <button
+          class="crowdfund__button crowdfund__button-modal--small js-gotIt"
+        >
           Got it!
         </button>
       </div>
