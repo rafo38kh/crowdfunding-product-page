@@ -23,8 +23,8 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <section class="crowdfund">
-      <header class="crowdfund__header">
+    <header class="crowdfund">
+      <div class="crowdfund__header">
         <div class="crowdfund__header-wrapper">
           <img src="images/logo.svg" alt="crowdfund" class="crowdfund__logo" />
 
@@ -52,15 +52,16 @@
             </li>
           </ul>
         </nav>
-      </header>
-    </section>
+      </div>
+    </header>
 
     <main class="crowdfund__main">
-      <section class="mastercraft__section">
+      <div class="mastercraft__section">
         <img
           src="images/logo-mastercraft.svg"
-          alt="mastercraft"
+          alt=""
           class="mastercraft__logo"
+          aria-hidden="true"
         />
         <h1 class="mastercraft__title mastercraft__title--primary">
           Mastercraft Bamboo Monitor Riser
@@ -83,9 +84,9 @@
             <span> Bookmark </span>
           </button>
         </div>
-      </section>
+      </div>
 
-      <section class="mastercraft__section">
+      <div class="mastercraft__section">
         <div class="mastercraft__number-wrapper">
           <p class="mastercraft__num">
             <span class="mastercraft__num-span js-amount">$89,914 </span> of
@@ -103,9 +104,9 @@
         <div class="mastercraft__progress">
           <div class="mastercraft__progress--bar js-progress"></div>
         </div>
-      </section>
+      </div>
 
-      <section class="mastercraft__section">
+      <div class="mastercraft__section">
         <h2 class="mastercraft__title mastercraft__title--secondary">
           About this project
         </h2>
@@ -223,10 +224,26 @@
             </button>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__attribution">
+        Challenge by
+        <a
+          class="footer__attribution-link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor </a
+        >. Coded by
+        <a
+          class="footer__attribution-link"
+          href="https://github.com/rafo38kh"
+          target="_blank"
+          >rafo38kh</a
+        >.
+      </p>
+    </footer>
 
     <div class="modal__wrapper js-modal">
       <div class="modal__section modal__big js-big">
@@ -417,9 +434,5 @@
         </button>
       </div>
     </div>
-
-    <!-- Enter your pledge
-  $200
-  Continue -->
   </body>
 </html>

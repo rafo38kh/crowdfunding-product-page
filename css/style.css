@@ -430,6 +430,24 @@ body {
   }
 }
 
+.footer__attribution {
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0rem 0 1rem 0;
+}
+.footer__attribution-link:link, .footer__attribution-link:visited {
+  text-transform: uppercase;
+  color: #3cb4ac;
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer__attribution-link:hover, .footer__attribution-link:active {
+  color: #147b74;
+  text-decoration: underline;
+}
+
 .modal__wrapper {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
