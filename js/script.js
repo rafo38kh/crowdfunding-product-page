@@ -33,24 +33,6 @@ const calcProgresBarWidth = function (total, target) {
   return percent <= 100 ? percent : 100;
 };
 
-const addNumbersAndProgressBar = function () {
-  if ([...inputs].some((input) => input.classList.contains("input__error")))
-    return;
-
-  amountNum.textContent = formatNumber(inputAmount, amountNum);
-  backerNum.textContent = (getNumber(backerNum) + 1).toLocaleString("en");
-
-  bigModal.classList.remove("modal__active");
-  smallModal.classList.add("modal__active");
-
-  document.body.style.overflow = "";
-
-  progressBar.style.width = `${calcProgresBarWidth(
-    getNumber(amountNum),
-    100000
-  )}%`;
-};
-
 function navigation() {
   if (!nav.classList.contains("navigation__active")) {
     nav.classList.add("navigation__active");
@@ -63,20 +45,28 @@ function navigation() {
 
 function openModal() {
   modal.classList.add("modal__active");
+
   bigModal.classList.add("modal__active");
+
   document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
   modal.classList.remove("modal__active");
+
   radioBtn.forEach((radio) => (radio.checked = false));
+
   borderGreen.forEach((box) => box.classList.remove("box__active"));
+
   pledge.forEach((el) => el.classList.remove("pledge__active"));
+
   inputs.forEach((input) => {
     input.value = "";
     input.classList.remove("input__error");
   });
+
   pledgeText.forEach((txt) => txt.classList.remove("text__error"));
+
   document.body.style.overflow = "";
 }
 
@@ -91,19 +81,18 @@ function bookmarkBtn() {
 }
 
 function pledgeActive(e) {
-  const close = e.target.parentElement.parentElement.nextElementSibling;
-  const box = e.target.parentElement.parentElement.parentElement;
+  const close = e.target.parentElement.parentElement;
 
   borderGreen.forEach((box) => box.classList.remove("box__active"));
 
-  if (box.classList.contains("border")) {
-    box.classList.add("box__active");
+  if (close.parentElement.classList.contains("border")) {
+    close.parentElement.classList.add("box__active");
   }
 
   pledge.forEach((el) => el.classList.remove("pledge__active"));
 
-  if (!close.classList.contains("pledge__active")) {
-    close.classList.add("pledge__active");
+  if (!close.nextElementSibling.classList.contains("pledge__active")) {
+    close.nextElementSibling.classList.add("pledge__active");
   }
 }
 
@@ -147,19 +136,45 @@ const validateInputs = function (e) {
   }
 };
 
+const addNumbersAndProgressBar = function () {
+  if ([...inputs].some((input) => input.classList.contains("input__error")))
+    return;
+
+  amountNum.textContent = formatNumber(inputAmount, amountNum);
+  backerNum.textContent = (getNumber(backerNum) + 1).toLocaleString("en");
+
+  bigModal.classList.remove("modal__active");
+  smallModal.classList.add("modal__active");
+
+  document.body.style.overflow = "";
+
+  progressBar.style.width = `${calcProgresBarWidth(
+    getNumber(amountNum),
+    100000
+  )}%`;
+};
+
 burger.addEventListener("click", navigation);
+
 bookmark.addEventListener("click", bookmarkBtn);
+
 modalOpenBtn.forEach((btn) => btn.addEventListener("click", openModal));
+
 modalCloseBtn.addEventListener("click", closeModal);
+
 radioBtn.forEach((radio) => radio.addEventListener("click", pledgeActive));
+
 inputs.forEach((input) => input.addEventListener("input", validateInputs));
+
 continueBtn.forEach((btn) =>
   btn.addEventListener("click", addNumbersAndProgressBar)
 );
+
 gotItBtn.addEventListener("click", () => {
   modalBg.classList.remove("modal__active");
   smallModal.classList.remove("modal__active");
   document.body.style.overflow = "";
   closeModal();
 });
+
 window.addEventListener("load", closeModal);

@@ -133,7 +133,7 @@ body {
 }
 @media (min-width: 810px) {
   .crowdfund {
-    background-image: url(./images/image-hero-desktop.jpg);
+    background-image: url(../images/image-hero-desktop.jpg);
     min-height: 40rem;
   }
 }
@@ -520,6 +520,9 @@ body {
 }
 .modal__subtitle-disabled {
   opacity: 0.6;
+}
+.modal__close:hover {
+  width: 1.42rem;
 }
 .modal__paragraph {
   color: #7a7a7a;

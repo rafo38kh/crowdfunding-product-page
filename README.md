@@ -39,6 +39,7 @@ This is a solution to the [Crowdfunding Product Page Solution Challenge on Front
 - Semantic HTML5 markup
 - SCSS custom properties
 - CSS Flexbox
+- CSS Grid
 - Vanilla JS
 - Mobile-first workflow
 

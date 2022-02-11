@@ -121,6 +121,9 @@
   }
 
   &__close {
+    &:hover {
+      width: 1.42rem;
+    }
   }
 
   &__paragraph {
